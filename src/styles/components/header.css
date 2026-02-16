@@ -1,0 +1,101 @@
+/* ===============================================
+   HEADER.CSS - Site Café
+   Tons de marrom, bege e dourado
+   =============================================== */
+
+.custom-navbar {
+    background-color: var(--primary) !important;
+    border-bottom: 1px solid rgb(146, 6, 18);
+}
+
+/* Logo */
+.logo-img {
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+.brand-text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--accent);
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+/* Links do menu */
+.navbar .nav-link {
+    color: var(--light) !important;
+    font-family: var(--font-body);
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition);
+    position: relative;
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* Link ativo */
+.navbar .nav-link.active {
+    color: var(--accent) !important;
+    font-weight: 600;
+}
+
+.navbar .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background-color: var(--accent);
+    border-radius: 1px;
+}
+
+/* Botão oferta */
+.contact-btn {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    border: var(--primary) !important;
+    border-radius: var(--radius) !important;
+    transition: var(--transition);
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(244, 164, 96, 0.3);
+    color: var(--white) !important;
+}
+
+/* Responsivo */
+@media (max-width: 991px) {
+    .custom-navbar {
+        background-color: var(--dark) !important;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .navbar .nav-link {
+        padding: 0.75rem 1rem !important;
+    }
+    
+    .navbar .nav-link.active::after {
+        display: none;
+    }
+    
+    .navbar .nav-link.active {
+        background-color: rgba(244, 164, 96, 0.1);
+        border-radius: var(--radius);
+    }
+    
+    .contact-btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
