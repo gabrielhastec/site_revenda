@@ -1,0 +1,136 @@
+<!-- ==================================================
+   home.html – Casa das Máquinas
+   Página inicial com apresentação da empresa, diferenciais e produtos em destaque
+   ================================================== -->
+
+<!-- Hero Section -->
+<section class="hero-machines bg-dark text-light py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold mb-3">Equipamentos industriais para o seu negócio crescer</h1>
+        <p class="lead mb-4">Geladeiras, vitrines, batedeiras e liquidificadores de alta durabilidade para açougues, padarias, restaurantes e supermercados.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="/produtos" class="btn btn-primary btn-lg px-4">Conheça os produtos</a>
+          <a href="/contato" class="btn btn-outline-light btn-lg px-4">Solicitar orçamento</a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="/assets/images/illustrations/produtos_01.png" alt="Geladeira industrial" class="img-fluid rounded-3 shadow-lg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categorias -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Nossas linhas de produtos</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <i class="fas fa-temperature-low fa-3x text-primary mb-3"></i>
+          <h3 class="h5 fw-bold">Refrigeração</h3>
+          <p class="text-muted">Geladeiras, freezers e câmaras frias.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <i class="fas fa-utensils fa-3x text-primary mb-3"></i>
+          <h3 class="h5 fw-bold">Vitrines</h3>
+          <p class="text-muted">Expositoras térmicas e refrigeradas.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <i class="fas fa-blender fa-3x text-primary mb-3"></i>
+          <h3 class="h5 fw-bold">Preparo</h3>
+          <p class="text-muted">Batedeiras, liquidificadores e misturadores.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+          <h3 class="h5 fw-bold">Acessórios</h3>
+          <p class="text-muted">Peças, utensílios e produtos para manutenção.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Diferenciais -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://images.unsplash.com/photo-1581092335940-4e2f1d9f7f9b?w=600" alt="Técnico em manutenção" class="img-fluid rounded-3 shadow">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4">Por que escolher a Casa das Máquinas?</h2>
+        <div class="d-flex mb-3">
+          <div class="me-3">
+            <i class="fas fa-check-circle text-primary fa-2x"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Qualidade certificada</h5>
+            <p class="text-muted">Equipamentos com selo de conformidade e procedência.</p>
+          </div>
+        </div>
+        <div class="d-flex mb-3">
+          <div class="me-3">
+            <i class="fas fa-truck text-primary fa-2x"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Entrega rápida</h5>
+            <p class="text-muted">Entregamos para todo o Brasil em até 7 dias úteis.</p>
+          </div>
+        </div>
+        <div class="d-flex mb-3">
+          <div class="me-3">
+            <i class="fas fa-wrench text-primary fa-2x"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Assistência técnica própria</h5>
+            <p class="text-muted">Suporte especializado e peças originais.</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="me-3">
+            <i class="fas fa-credit-card text-primary fa-2x"></i>
+          </div>
+          <div>
+            <h5 class="fw-bold">Parcele em até 12x</h5>
+            <p class="text-muted">Facilidade no pagamento para você equipar seu negócio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Produtos em destaque -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Produtos em destaque</h2>
+    <div class="row g-4" id="destaques-container">
+      <!-- Os cards serão inseridos via JavaScript -->
+    </div>
+    <div class="text-center mt-5">
+      <a href="/produtos" class="btn btn-primary btn-lg px-5">Ver todos os produtos</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Contato -->
+<section class="py-5 bg-dark text-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Fale com um especialista</h2>
+    <p class="lead mb-4">Nossa equipe está pronta para ajudar você a escolher o equipamento ideal.</p>
+    <a href="/contato" class="btn btn-primary btn-lg px-5">Solicitar orçamento</a>
+  </div>
+</section>
+
+<!-- CSS e JS específicos da página -->
+<link rel="stylesheet" href="/src/pages/home/home.css">
+<script type="module" src="/src/pages/home/home.js"></script>

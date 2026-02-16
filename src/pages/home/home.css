@@ -1,0 +1,53 @@
+/* ==================================================
+   home.css – Casa das Máquinas
+   Estilos para a página inicial
+   ================================================== */
+
+.hero-machines {
+  background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), 
+              url('https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1920') center/cover no-repeat;
+  padding: 5rem 0;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: #cc0011;
+  border-color: #cc0011;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-machines {
+    padding: 3rem 0;
+  }
+  .hero-machines h1 {
+    font-size: 2rem;
+  }
+}
