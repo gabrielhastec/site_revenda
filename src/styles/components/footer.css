@@ -1,0 +1,39 @@
+/* ===============================================
+   FOOTER.CSS
+   Site Café – Marrom, amarelo e Bege
+   =============================================== */
+
+.custom-footer {
+    background-color: var(--dark) !important;
+    border-top: 1px solid rgba(244, 164, 96, 0.1);
+}
+
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.custom-footer a {
+    transition: var(--transition);
+}
+
+.custom-footer a:hover {
+    color: var(--accent) !important;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background-color: var(--accent);
+    transform: translateY(-3px);
+    color: var(--dark) !important;
+}
