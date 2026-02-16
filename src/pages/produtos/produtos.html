@@ -1,0 +1,58 @@
+<!-- ==================================================
+   produtos.html – Casa das Máquinas
+   Lista de produtos com filtros e ordenação
+   ================================================== -->
+
+<!-- Hero -->
+<section class="produtos-hero bg-dark text-light py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold mb-3">Nossos produtos</h1>
+        <p class="lead">Equipamentos de alta qualidade para o seu negócio. Confira nossa linha completa.</p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://images.unsplash.com/photo-1584568694244-14fb7c6a6b8c?w=600" alt="Linha de refrigeração" class="img-fluid rounded-3">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Filtros e ordenação -->
+<section class="py-4 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <div class="d-flex flex-wrap gap-2" id="filtros">
+          <button class="btn btn-outline-primary active" data-filter="todos">Todos</button>
+          <button class="btn btn-outline-primary" data-filter="refrigeracao">Refrigeração</button>
+          <button class="btn btn-outline-primary" data-filter="vitrine">Vitrines</button>
+          <button class="btn btn-outline-primary" data-filter="batedeira">Batedeiras</button>
+          <button class="btn btn-outline-primary" data-filter="liquidificador">Liquidificadores</button>
+          <button class="btn btn-outline-primary" data-filter="forno">Fornos</button>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 mt-md-0">
+        <select class="form-select" id="ordenar">
+          <option value="">Ordenar por</option>
+          <option value="preco-crescente">Preço: menor para maior</option>
+          <option value="preco-decrescente">Preço: maior para menor</option>
+          <option value="nome">Nome A–Z</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lista de produtos -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-4" id="produtos-container">
+      <!-- Os cards serão inseridos via JavaScript -->
+    </div>
+  </div>
+</section>
+
+<!-- CSS e JS específicos -->
+<link rel="stylesheet" href="/src/pages/produtos/produtos.css">
+<script type="module" src="/src/pages/produtos/produtos.js"></script>

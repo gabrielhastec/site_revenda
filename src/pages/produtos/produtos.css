@@ -1,0 +1,67 @@
+/* ==================================================
+   produtos.css – Casa das Máquinas
+   Estilos para a página de produtos
+   ================================================== */
+
+.produtos-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+              url('https://images.unsplash.com/photo-1584568694244-14fb7c6a6b8c?w=1920') center/cover no-repeat;
+  padding: 4rem 0;
+}
+
+#filtros .btn-outline-primary {
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: all 0.3s;
+}
+
+#filtros .btn-outline-primary.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+#filtros .btn-outline-primary:hover:not(.active) {
+  background-color: rgba(255, 0, 21, 0.1);
+  border-color: var(--primary);
+}
+
+.produto-item .card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-item .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+.produto-item .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.produto-item .card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.badge.bg-success {
+  background-color: #28a745 !important;
+}
+
+/* Estilo para produtos sem estoque */
+.produto-item .card .out-of-stock {
+  opacity: 0.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .produtos-hero {
+    padding: 2rem 0;
+  }
+  #filtros {
+    justify-content: center;
+  }
+}
